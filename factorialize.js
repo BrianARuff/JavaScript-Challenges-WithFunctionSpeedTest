@@ -16,4 +16,4 @@ function recursiveFactorialize(num) {
   }
 }
 
-console.log(recursiveFactorialize(5));
+console.log(recursiveFactorialize(6));
