@@ -1,21 +1,28 @@
-function palindrome(str) {
-  var regexp = (/\W_/g);
-  var strReverse = str.split('').reverse().join('');
-  return str.toLowerCase() === strReverse ? true : false
+function palindrone(str) {
+  var regex = /[\W_]/g;
+  var lowerCaseString = str.toLowerCase().replace(regex, '');
+  var reversedString = lowerCaseString.split('').reverse().join('').toLowerCase();
+  return lowerCaseString === reversedString ? true : false;
 }
+console.log(palindrone('mom--'));
 
-function manualPalindrome(str) {
-  var final = '';
-  for (var i = str.length - 1; i >= 0; i--) {
-    final += str[i];
-  }
-  var regex = /\W_/g;
-  var storageString = ''
-  for (var i = 0; i < final.length; i++) {
-    if (final[i] !== regex) {
-      storageString += final[i];
+function manualPalindrone(str) {
+  var regex = /[\W_]/g;
+  
+  var lowerCaseString = '';
+  for (var i = 0; i >= str.length; i++) {
+    if (str[i].toLowerCase() === regex) {
+      lowerCaseString += '';
+    } else {
+      lowerCaseString += str[i];
     }
   }
-  return storageString.toLowerCase() === str.toLowerCase() ? true : false; 
+  
+  var reversedString = '';
+  for (var j = lowerCaseString.length -1; j >= 0; j++) {
+    reversedString += lowerCaseString[j];
+  }
+  return reversedString === lowerCaseString ? true : false;
 }
-console.log(manualPalindrome('racecar'));
+
+console.log(manualPalindrone('---mom--'));
