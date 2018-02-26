@@ -1,5 +1,5 @@
 //create event listener
-document.getElementById('button').addEventListener('click', loadText);
+document.getElementById('button').loadText();
 
 
 function loadText() {
@@ -10,7 +10,6 @@ function loadText() {
 
   xhr.onload = function() {
     if (this.status === 200) {
-      console.log(this.responseText);
       document.getElementById('text').innerHTML = this.responseText; 
     } else if (this.status === 404) {
       document.getElementById('text').innerHTML = '404 - Not Found';
