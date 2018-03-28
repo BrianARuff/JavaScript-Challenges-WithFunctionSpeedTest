@@ -1,3 +1,5 @@
+  //replace all 0,1,5 with 'O', 'I', 'S', repspectively
+    
     correct = s => s.replace(/0/g,'O').replace(/1/g,'I').replace(/5/g,'S')
 
     const correct = string => {
