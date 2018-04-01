@@ -6,24 +6,14 @@ running the following bit of code below.
     var iterations = 1000000;
     console.time('Function #1');
     for(var i = 0; i < iterations; i++ ){
-        functionOne(([true,  true,  true,  false,
-                  true,  true,  true,  true ,
-                  true,  false, true,  false,
-                  true,  false, false, true ,
-                  true,  true,  true,  true ,
-                  false, false, true,  true ]));
+        functionOne();
     }
 
     console.timeEnd('Function #1');
 
     console.time('Function #2');
     for(var i = 0; i < iterations; i++ ){
-        functionTwo(([true,  true,  true,  false,
-                  true,  true,  true,  true ,
-                  true,  false, true,  false,
-                  true,  false, false, true ,
-                  true,  true,  true,  true ,
-                  false, false, true,  true ]));
+        functionTwo();
     }
 
     console.timeEnd('Function #2');
