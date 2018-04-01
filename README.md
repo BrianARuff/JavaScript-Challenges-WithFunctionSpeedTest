@@ -1,6 +1,6 @@
 # JavaScript-Challenges-WithTest
 
-As of April 1st, 2014, I will try to post only the fastest method of solving said challenge that is I come by. I acheive this by 
+As of April 1st, 2018, I will try to post only the fastest method of solving said challenge that is I come by. I acheive this by 
 running the following bit of code below.
 
     var iterations = 1000000;
